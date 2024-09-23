@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'dart:ui';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_app/utils.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class OnbordingSreen3 extends StatelessWidget {
- @override
+  @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
@@ -19,9 +17,10 @@ class OnbordingSreen3 extends StatelessWidget {
             right: 0,
             top: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height /1.75, // Set the height to 100
+              height: MediaQuery.of(context).size.height /
+                  1.75, // Set the height to 100
               child: Image.asset(
-                  'assets/images/element_5_digital_cp_bbsda_2_eri_unsplash_1.png',
+                'assets/images/element_5_digital_cp_bbsda_2_eri_unsplash_1.png',
                 width: double.infinity, // Makes width responsive
                 fit: BoxFit.cover,
               ),
@@ -32,7 +31,7 @@ class OnbordingSreen3 extends StatelessWidget {
             bottom: 0,
             right: 0,
             child: SizedBox(
-              width: MediaQuery.of(context).size.height /2,
+              width: MediaQuery.of(context).size.height / 2,
               height: MediaQuery.of(context).size.height / 2,
               child: SvgPicture.asset(
                 'assets/vectors/vector_11_x2.svg',
@@ -41,7 +40,7 @@ class OnbordingSreen3 extends StatelessWidget {
           ),
           // Title Text
           Positioned(
-            bottom: 280,
+            bottom: MediaQuery.of(context).size.height / 3,
             left: 0,
             right: 0,
             child: Center(
@@ -50,7 +49,7 @@ class OnbordingSreen3 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
                   fontWeight: FontWeight.w700,
-                  fontSize: 27,
+                  fontSize: 23,
                   height: 1.3,
                   letterSpacing: 0.8,
                   color: Color(0xFF000000),
@@ -60,7 +59,7 @@ class OnbordingSreen3 extends StatelessWidget {
           ),
           // Description Text
           Positioned(
-            bottom: 189,
+            bottom: MediaQuery.of(context).size.height / 5,
             left: 20,
             right: 20,
             child: Center(
@@ -69,7 +68,7 @@ class OnbordingSreen3 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
                   fontWeight: FontWeight.w500,
-                  fontSize: 16,
+                  fontSize: 15,
                   letterSpacing: 0.5,
                   color: Color(0xFF868889),
                 ),
@@ -78,7 +77,7 @@ class OnbordingSreen3 extends StatelessWidget {
           ),
           // Pagination Dots
           Positioned(
-            bottom: 150,
+            bottom: MediaQuery.of(context).size.height / 6,
             left: 0,
             right: 0,
             child: Center(
@@ -95,24 +94,25 @@ class OnbordingSreen3 extends StatelessWidget {
             ),
           ),
           // Start Button
-              Positioned(
-                bottom: 34, // Positioning the button at the bottom
-                left: 40, // Margin from the left
-                right: 48, // Margin from the right
-                child: SizedBox(
-                  height: 54,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      // Action for the start button
-                    },
-                    child: Text("Commencez"),
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.white, backgroundColor: Color(0xFF3BB77E), // Text color
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                    ),
-                  ),
+          Positioned(
+            bottom: 34, // Positioning the button at the bottom
+            left: 40, // Margin from the left
+            right: 48, // Margin from the right
+            child: SizedBox(
+              height: 54,
+              child: ElevatedButton(
+                onPressed: () {
+                  // Action for the start button
+                },
+                child: Text("Commencez"),
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Color(0xFF3BB77E), // Text color
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
               ),
+            ),
+          ),
         ],
       ),
     );
@@ -129,4 +129,3 @@ class OnbordingSreen3 extends StatelessWidget {
     );
   }
 }
-

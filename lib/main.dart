@@ -10,7 +10,6 @@ import 'package:flutter_app/pages/onbording_sreen_3.dart';
 import 'package:flutter_app/pages/splash_screen.dart';
 import 'package:flutter_app/pages/welcome_screen.dart';
 
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,17 +20,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter App',
       home: Scaffold(
-
         // body: LoginScreen(),
-        // body: LoginScreen1(),
+        //body: LoginScreen1(),
         // body: LoginScreen2(),
-       // body: OnboardingScreen(),
-       //body: OnboardingScreen1(),
-        // body: OnbordingSreen2(),
-        // body: OnbordingSreen3(),
-         // body: SplashScreen(),
-         body: WelcomeScreen(),
-
+        // body: OnboardingScreen(),
+        //body: OnboardingScreen1(),
+        //body: OnbordingSreen2(),
+        //body: OnbordingSreen3(),
+        // body: SplashScreen(),
+        body: WelcomeScreen(),
       ),
     );
   }

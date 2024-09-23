@@ -8,14 +8,15 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-                    Positioned(
+          Positioned(
             left: 0,
             right: 0,
             top: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height /1.75, // Set the height to 100
+              height: MediaQuery.of(context).size.height /
+                  1.75, // Set the height to 100
               child: Image.asset(
-              'assets/images/beautiful_female_with_shopping_cart_walking_by_supermarket_freezer_choosing_what_buy_1.png',
+                'assets/images/beautiful_female_with_shopping_cart_walking_by_supermarket_freezer_choosing_what_buy_1.png',
                 width: double.infinity, // Makes width responsive
                 fit: BoxFit.cover,
               ),
@@ -25,11 +26,10 @@ class WelcomeScreen extends StatelessWidget {
           // Bottom White Container with Rounded Corners
           Positioned(
             left: 0,
-
             right: 0,
             bottom: 0,
             child: Container(
-              height: MediaQuery.of(context).size.height /1.75,
+              height: MediaQuery.of(context).size.height / 1.75,
               decoration: BoxDecoration(
                 color: Color(0xFFF4F5F9),
                 borderRadius: BorderRadius.only(
